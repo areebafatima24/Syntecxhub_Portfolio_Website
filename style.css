@@ -16,6 +16,23 @@ nav a {
 }
 
 img {
-  width: 100%;
-  max-width: 1200px;
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
 }
+/* Responsive tweaks for small screens */
+@media (max-width: 600px) {
+  nav {
+    padding: 10px;
+  }
+  nav a {
+    display: block;
+    margin: 10px 0;
+    font-size: 18px;
+  }
+  .hero, section {
+    padding: 20px 10px;
+  }
+}
+
