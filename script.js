@@ -33,7 +33,7 @@ window.addEventListener("scroll", () => {
   let current = "";
 
   sections.forEach(section => {
-    const sectionTop = section.offsetTop - 120;
+    const sectionTop = section.offsetTop - 140;
     if (window.scrollY >= sectionTop) {
       current = section.getAttribute("id");
     }
@@ -59,3 +59,42 @@ const observer = new IntersectionObserver((entries) => {
 }, { threshold: 0.12 });
 
 reveals.forEach(r => observer.observe(r));
+
+/* TYPING EFFECT */
+const typingEl = document.getElementById("typing");
+
+const words = [
+  "Future Cybersecurity Engineer.",
+  "UI/UX Designer.",
+  "Problem Solver.",
+  "Creative Developer."
+];
+
+let wordIndex = 0;
+let charIndex = 0;
+let isDeleting = false;
+
+function typeEffect() {
+  const currentWord = words[wordIndex];
+
+  if (!isDeleting) {
+    typingEl.textContent = currentWord.substring(0, charIndex + 1);
+    charIndex++;
+    if (charIndex === currentWord.length) {
+      isDeleting = true;
+      setTimeout(typeEffect, 1100);
+      return;
+    }
+  } else {
+    typingEl.textContent = currentWord.substring(0, charIndex - 1);
+    charIndex--;
+    if (charIndex === 0) {
+      isDeleting = false;
+      wordIndex = (wordIndex + 1) % words.length;
+    }
+  }
+
+  setTimeout(typeEffect, isDeleting ? 45 : 70);
+}
+
+typeEffect();
