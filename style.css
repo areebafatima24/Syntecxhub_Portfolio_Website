@@ -1,160 +1,44 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
 body {
+  margin: 0;
+  text-align: center;
   font-family: Arial, sans-serif;
 }
 
-/* TOP NAVBAR */
-.top-nav {
+/* NAVBAR */
+nav {
   background: black;
-  padding: 18px;
+  padding: 15px;
 
   display: flex;
   justify-content: center;
-  gap: 35px;
+  align-items: center;
+  gap: 25px;
   flex-wrap: wrap;
 }
 
-.top-nav a {
+nav a {
   color: white;
   text-decoration: none;
-  font-size: 20px;
+  font-size: 18px;
 }
 
-/* HERO BACKGROUND */
-.hero {
-  background: #6b1f1f;
-  min-height: 90vh;
-  padding: 40px 20px;
-}
-
-/* HERO CONTAINER */
-.hero-container {
-  max-width: 1050px;
-  margin: 0 auto;
-  position: relative;
-}
-
-/* NAME TEXT */
-.hero-name {
-  color: white;
-  font-size: 14px;
-  margin-bottom: 25px;
-  margin-left: 5px;
-}
-
-.hero-name .bold {
-  font-weight: bold;
-}
-
-.hero-name .light {
-  opacity: 0.8;
-}
-
-/* MINI NAV INSIDE HERO */
-.hero-mini-nav {
-  background: #b98f8f;
-  padding: 12px 18px;
-
-  display: flex;
-  justify-content: space-around;
-  gap: 20px;
-
-  width: 520px;
-  max-width: 100%;
-
-  margin-left: auto;
-  margin-bottom: 25px;
-}
-
-.hero-mini-nav a {
-  color: white;
-  text-decoration: none;
-  font-weight: bold;
-  font-size: 14px;
-}
-
-/* MAIN HERO BOX */
-.hero-box {
-  display: flex;
-  gap: 0;
-  align-items: stretch;
-}
-
-/* IMAGE SIDE */
-.hero-image img {
-  width: 450px;
-  max-width: 100%;
-  height: 100%;
-  object-fit: cover;
-  display: block;
-}
-
-/* TEXT SIDE */
-.hero-text {
-  background: #9a6b3b;
+/* PAGE IMAGES */
+img {
   width: 100%;
-  padding: 40px;
-  color: #f5f0e8;
-
-  font-family: "Georgia", serif;
-  font-style: italic;
-  font-size: 28px;
-  line-height: 1.4;
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
 }
 
-.hero-text p {
-  margin-bottom: 25px;
-}
-
-/* BUTTON */
-.btn {
-  display: inline-block;
-  background: #c38b8b;
-  color: white;
-  padding: 14px 22px;
-  border-radius: 6px;
-  text-decoration: none;
-  font-family: Arial, sans-serif;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 16px;
-}
-
-/* ✅ MOBILE RESPONSIVE FIX */
-@media (max-width: 750px) {
-
-  .top-nav {
-    gap: 18px;
+/* MOBILE RESPONSIVE */
+@media (max-width: 600px) {
+  nav {
+    gap: 12px;
+    padding: 12px;
   }
 
-  .top-nav a {
-    font-size: 18px;
-  }
-
-  .hero-box {
-    flex-direction: column;
-  }
-
-  .hero-image img {
-    width: 100%;
-    height: auto;
-  }
-
-  .hero-text {
-    font-size: 20px;
-    padding: 25px;
-    text-align: center;
-  }
-
-  .hero-mini-nav {
-    width: 100%;
-    flex-wrap: wrap;
-    justify-content: center;
+  nav a {
+    font-size: 16px;
   }
 }
-
