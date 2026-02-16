@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Areeba Fatima | Portfolio</title>
 
+  <link rel="icon" type="image/png" href="favicon.png" />
   <link rel="stylesheet" href="style.css" />
 </head>
 
@@ -28,21 +29,28 @@
   <section class="section hero reveal" id="home">
     <div class="text">
       <p class="tag">Cybersecurity • UI/UX • CSE</p>
-      <h1>Hi, I’m <span>Areeba Fatima</span></h1>
+
+      <h1>
+        Hi, I’m <span>Areeba Fatima</span><br />
+        <span class="typing" id="typing"></span>
+      </h1>
+
       <p>
-        A Computer Science student passionate about <b>Cybersecurity</b> and <b>UI/UX Design</b>.
-        I love building clean, modern and impactful digital experiences.
+        I’m a Computer Science student passionate about <b>Cybersecurity</b> and <b>UI/UX Design</b>.
+        I create modern, clean and impactful digital experiences.
       </p>
 
       <div class="btns">
         <a class="btn primary" href="#projects">View Projects</a>
         <a class="btn secondary" href="#contact">Contact Me</a>
+
+        <a class="btn ghost" href="resume.pdf" target="_blank">Download Resume</a>
         <a class="btn ghost" href="https://github.com/areebafatima24" target="_blank">GitHub</a>
-        <a class="btn ghost" href="https://www.linkedin.com/" target="_blank">LinkedIn</a>
+        <a class="btn ghost" href="https://www.linkedin.com/in/areeba-fatima-754357383/" target="_blank">LinkedIn</a>
       </div>
     </div>
 
-    <div class="image-card">
+    <div class="image-card glow">
       <img src="home.png" alt="Home Section Image" />
     </div>
   </section>
@@ -50,9 +58,7 @@
   <!-- ABOUT -->
   <section class="section reveal" id="about">
     <h2 class="title">About Me</h2>
-    <p class="subtitle">
-      A quick introduction about me.
-    </p>
+    <p class="subtitle">A quick introduction about me.</p>
 
     <div class="image-card big">
       <img src="about.png" alt="About Section Image" />
@@ -62,9 +68,43 @@
   <!-- PROJECTS -->
   <section class="section reveal" id="projects">
     <h2 class="title">Projects</h2>
-    <p class="subtitle">
-      Some of my highlighted work.
-    </p>
+    <p class="subtitle">Some of my highlighted work.</p>
+
+    <!-- REAL PORTFOLIO STYLE PROJECT CARDS -->
+    <div class="projects-grid">
+      <div class="project-card">
+        <h3>E-Commerce Shopping Application</h3>
+        <p>
+          Full-stack shopping app with product catalog, authentication, transaction processing,
+          and optimized database queries using JDBC.
+        </p>
+        <div class="project-tags">
+          <span>Java</span><span>JDBC</span><span>DBMS</span>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <h3>Retail Store Mobile Application</h3>
+        <p>
+          Cross-platform mobile app for retail inventory and sales tracking with smooth UI and
+          transaction tracking features.
+        </p>
+        <div class="project-tags">
+          <span>MIT App Inventor</span><span>Mobile</span><span>UI</span>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <h3>DSA + Java Practice</h3>
+        <p>
+          Structured problem-solving practice using DSA in Java to strengthen logic,
+          interview preparation and core CS skills.
+        </p>
+        <div class="project-tags">
+          <span>Java</span><span>DSA</span><span>Problem Solving</span>
+        </div>
+      </div>
+    </div>
 
     <div class="image-card big">
       <img src="projects.png" alt="Projects Section Image" />
@@ -74,9 +114,20 @@
   <!-- SKILLS -->
   <section class="section reveal" id="skills">
     <h2 class="title">Skills</h2>
-    <p class="subtitle">
-      My strongest skills and areas of interest.
-    </p>
+    <p class="subtitle">My strongest skills and areas of interest.</p>
+
+    <div class="skills-row">
+      <div class="skill-pill">C</div>
+      <div class="skill-pill">Java</div>
+      <div class="skill-pill">DSA</div>
+      <div class="skill-pill">UI/UX</div>
+      <div class="skill-pill">Cybersecurity</div>
+      <div class="skill-pill">JDBC</div>
+      <div class="skill-pill">DBMS</div>
+      <div class="skill-pill">Problem Solving</div>
+      <div class="skill-pill">Communication</div>
+      <div class="skill-pill">Teamwork</div>
+    </div>
 
     <div class="image-card big">
       <img src="skills.png" alt="Skills Section Image" />
@@ -86,9 +137,14 @@
   <!-- CONTACT -->
   <section class="section reveal" id="contact">
     <h2 class="title">Contact</h2>
-    <p class="subtitle">
-      Want to connect? Send me a message.
-    </p>
+    <p class="subtitle">Want to connect? Send me a message.</p>
+
+    <div class="contact-actions">
+      <a class="btn primary" href="mailto:areebafatima720@gmail.com">Email Me</a>
+      <a class="btn secondary" href="resume.pdf" target="_blank">Resume</a>
+      <a class="btn ghost" href="https://github.com/areebafatima24" target="_blank">GitHub</a>
+      <a class="btn ghost" href="https://www.linkedin.com/in/areeba-fatima-754357383/" target="_blank">LinkedIn</a>
+    </div>
 
     <div class="contact-grid">
       <div class="image-card">
