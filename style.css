@@ -7,12 +7,18 @@ body {
 nav {
   background: black;
   padding: 15px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+  flex-wrap: wrap;
 }
 
 nav a {
   color: white;
-  margin: 15px;
   text-decoration: none;
+  font-size: 18px;
 }
 
 img {
@@ -21,20 +27,21 @@ img {
   display: block;
   margin: 0 auto;
 }
+
 /* Responsive tweaks for small screens */
 @media (max-width: 600px) {
   nav {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
     gap: 12px;
     padding: 12px;
   }
 
   nav a {
-    display: inline-block;
-    margin: 0;
     font-size: 16px;
+  }
+
+  .hero,
+  section {
+    padding: 20px 10px;
   }
 }
 
